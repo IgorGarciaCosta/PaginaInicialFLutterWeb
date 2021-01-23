@@ -23,7 +23,7 @@ class DesktopNavbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
-        constraints: BoxConstraints(maxWidth: 1500),
+        //constraints: BoxConstraints(maxWidth: 1500),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[

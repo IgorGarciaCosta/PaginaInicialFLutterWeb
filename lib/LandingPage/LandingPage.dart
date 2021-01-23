@@ -4,7 +4,7 @@ class LandingPage extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
-        width:width ,
+        width: width,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -38,7 +38,10 @@ class LandingPage extends StatelessWidget {
           ],
         ),
       ),
-      Image.asset("assets/images/lp_image.png", width: width),
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20.0),
+        child: Image.asset("assets/images/lp_image.png", width: width),
+      ),
     ];
   }
 
@@ -49,7 +52,7 @@ class LandingPage extends StatelessWidget {
         if (constraints.maxWidth > 800) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(constraints.biggest.width/2),
+            children: pageChildren(constraints.biggest.width / 2),
           );
         } else {
           return Column(
